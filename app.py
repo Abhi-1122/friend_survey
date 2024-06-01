@@ -41,8 +41,8 @@ def survey():
     if request.method == 'POST':
         user_ip = request.remote_addr
         location_info = get_geolocation(user_ip)
-        if check_location(user_ip,location_info) is False:
-            return "You are not allowed to take the survey."
+        # if check_location(user_ip,location_info) is False:
+        #     return "You are not allowed to take the survey."
         # Retrieve form data
         data = {}
         for i in range(1, 13):
